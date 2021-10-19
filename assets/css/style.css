@@ -1,0 +1,159 @@
+body{
+    max-width: 2160px;
+    min-width: 720px;
+    /* dibatasi 2150px supaya mengurangi resiko kerusakan frame di user dengan ukuran layar yang beberbeda */
+    font-family: Arial, Helvetica, sans-serif!important;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+header{
+    background: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-banner{
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-banner{
+    background-color: rgb(62, 62, 62);
+    height: 250px;
+    width: 100%;
+}
+.a-text{
+    color: white!important;
+}
+.color-white{
+    color: rgb(147, 147, 147)!important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+span{
+    color: rgb(62, 62, 62)!important;
+}
+.b-text{
+    color: white!important;
+}
+.b-1-text{
+    color: lightgrey!important;
+}
+.a-text:hover{
+    color: black!important;
+}
+nav{
+    position: fixed;
+    top: 0;
+    max-width: 2160px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 100;
+    background:transparent;
+}
+nav.active{
+    position: fixed;
+    top: 0;
+    max-width: 2160px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 100;
+    background:rgb(145, 131, 118);
+}
+a{
+    color: black!important;
+}
+.section-1{
+    background-color: white;
+    height: 400px;
+}
+.section-2{
+    background-color: white;
+    height: 400px;
+}
+.pre-section-2{
+    background-color: white;
+    height: 200px;
+}
+.section-3{
+    background-color: white;
+    height: 400px;
+}
+.pre-section-3{
+    background-color: white;
+    height: 200px;
+}
+.section-4{
+    background-color: salmon;
+    height: 300px;
+}
+.desc{
+    background-color: white;
+    height: 250px;
+}
+.img-1{
+    width: 400px;
+    height: 400px;
+}
+.text-right{
+    text-align: right;
+}
+body{
+    margin: 0;
+}
+*{margin: 0; padding: 0}
+@keyframes autopopup {
+    from {opacity: 0;margin-top:-200px;}
+    to {opacity: 1;}
+}
+#close {
+    background-color: rgba(64, 68, 65, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation:autopopup 3.5s;
+}
+#close:target {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 768px){
+    .container-popup {
+        width:30%;
+    }
+}
+@media (max-width: 767px){
+    .container-popup {
+        width:30%;
+    }
+}
+.container-popup {
+    position: relative;
+    margin: 5% auto;
+    padding: 4px 3px;
+    background-color: #e1fff5;
+    color: #333;
+    border-radius: 8px;
+}
+.container-popup img {
+    width: 100%
+}
+.close {
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #33898B;
+    padding:7px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
